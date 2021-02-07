@@ -134,3 +134,11 @@ db.Workout.deleteMany({})
     console.error(err);
     process.exit(1);
   });
+
+  //   db.Workout.create(workoutSeed)
+//   .then(dbWorkout => {
+//     console.log(dbWorkout);
+//   })
+//   .catch(({ message }) => {
+//     console.log(message);
+//   });
