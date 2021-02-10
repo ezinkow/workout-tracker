@@ -12,16 +12,20 @@ router.get("/stats", (req, res) => {
 })
 
 router.get("/api/workouts/range", (req, res) => {
-    Workout.find().sort(
-        { 
-            day: "asc"
-        }
-    )
-    .then(
-        workoutRange => {
-            res.json(workoutRange)
-        }
-    )
+    const update = function () {
+        date = moment(new Date())
+        today.html(date.format('YYYY-MMMM-dddd Do'));
+    }
+    console.log('update', update)
+    Workout.aggregate([
+        { $sort: { day: 1 } }
+        // { $range: }
+    ])
+        .then(
+            workoutRange => {
+                res.json(workoutRange)
+            }
+        )
 })
 // sort and range
 
