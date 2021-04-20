@@ -8,7 +8,7 @@ https://ancient-tundra-28305.herokuapp.com/
 
 ## About This Project:
 
-This was a homework assignment as part of the Northwestern Coding Bootcamp to build an application where a user can input workouts on a daily basis, enter new, update, or continue past workouts, and log the exercise.
+This is an application where a user can input workouts on a daily basis, enter new, update, or continue past workouts, and log the exercise.
 
 This was built with MongoDB, Mongoose, express, node, Heroku, Javascript, HTML and CRUD methods.
 
